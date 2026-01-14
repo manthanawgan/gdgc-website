@@ -1,63 +1,38 @@
+@reference "../../index.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  /* Button container - bottom center */
-  .button-container {
-    @apply fixed bottom-[20px] left-1/2 transform -translate-x-1/2 flex justify-center z-[1000];
+@layer utilities {
+  /* Button styling */
+  .btn-primary {
+    @apply flex items-center gap-2 px-5 py-3 rounded-xl border-2 border-black bg-blue-600 text-white font-semibold shadow-lg shadow-black/50 transition-transform duration-300 relative overflow-hidden;
   }
 
-  /* Join Us Button */
-  .join-btn {
-    @apply group inline-flex items-center gap-[8px] bg-[#2D8CFF] text-white text-[16px] font-semibold px-[28px] py-[12px] rounded-[14px] shadow-[0_4px_0_#000] transition-all duration-200 ease-in-out cursor-pointer focus:outline-none focus:ring-4 focus:ring-[#93c5fd];
+  /* Hover effects for the button */
+  .btn-primary:hover {
+    @apply scale-105 bg-blue-700;
+    animation: pulseShadow 0.6s ease-in-out infinite;
   }
 
-  /* Hover background */
-  .join-btn:hover {
-    @apply bg-[#1d7cf5];
+  /* Arrow styling and animation */
+  .arrow {
+    @apply inline-block -rotate-45 transition-transform duration-300;
   }
 
-  /* Pressed effect */
-  .join-btn:active {
-    @apply translate-y-[2px] shadow-[0_2px_0_#000];
+  .btn-primary:hover .arrow {
+    animation: bounceArrow 0.4s ease-in-out forwards;
   }
 
-  /* Icon inside button */
-  .icon {
-    @apply inline-block text-[18px] font-bold transform -rotate-45 transition-transform duration-300 ease-in-out;
+  /* Arrow bounce + diagonal slide */
+  @keyframes bounceArrow {
+    0%, 100% { transform: translate(0, 0) rotate(-45deg); }
+    50% { transform: translate(4px, -4px) rotate(-45deg); }
   }
 
-  /* Rotate arrow on hover or active */
-  .join-btn:hover .icon,
-  .join-btn:active .icon {
-    @apply rotate-45 translate-x-[4px] translate-y-[4px];
-  }
-
-  /* Remove focus outline after clicking */
-  .join-btn:focus {
-    @apply outline-none;
-  }
-
-  /* Responsive for mobile (<600px) */
-  @media (max-width: 600px) {
-    .join-btn {
-      @apply w-[90%] justify-center text-[15px] px-[20px] py-[10px] rounded-[12px] shadow-[0_3px_0_#000];
-    }
-
-    .icon {
-      @apply text-[16px];
-    }
-  }
-
-  /* Responsive for extra small (<380px) */
-  @media (max-width: 380px) {
-    .join-btn {
-      @apply w-[85%] px-[16px] py-[9px] text-[14px];
-    }
-
-    .icon {
-      @apply text-[15px];
-    }
+  /* Button shadow pulse */
+  @keyframes pulseShadow {
+    0%, 100% { box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5); }
+    50% { box-shadow: 0 15px 25px rgba(0, 0, 0, 0.7); }
   }
 }
