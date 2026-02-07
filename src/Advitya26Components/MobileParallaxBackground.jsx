@@ -10,9 +10,6 @@ const MobileParallaxBackground = ({ onRingsFadeStart = () => {} }) => {
     });
 
     // Reduced parallax intensity for mobile - much subtler movements
-    // const bridge = useTransform(x, [0, 0.1], [0, 150]);
-    const pisa = useTransform(x, [0, 0.1], [0, -80]);
-    const gate = useTransform(x, [0, 0.1], [0, 50]);
     const colosseum = useTransform(x, [0, 0.1], [0, 100]);
     const greatwall = useTransform(x, [0, 0.1], [0, 80]);
 
@@ -41,26 +38,8 @@ const MobileParallaxBackground = ({ onRingsFadeStart = () => {} }) => {
                     onFadeStart={onRingsFadeStart}
                 />
 
-                {/* Golden Bridge - Mobile Optimized */}
-                {/* <motion.div
-                    style={{ x: bridge }}
-                    initial={{ x: "100%" }}
-                    animate={{ x: 0 }}
-                    transition={{ duration: 2, ease: "easeInOut" }}
-                    className='absolute top-0 left-0 w-full h-full z-60'
-                >
-                    <motion.img
-                        src="/olympicsImages/golden-bridge-copy.png"
-                        // alt="Golden Bridge"
-                        className='absolute -right-10 bottom-[-40vh] scale-x-[-1] h-auto w-auto object-contain z-60'
-                    />
-                </motion.div>
-                 */}
-
-
-
                 {/* Pisa Tower - Mobile Optimized */}
-                <motion.div
+                {/* <motion.div
                     style={{ x: pisa }}
                     className='absolute w-full left-0 h-[70vh] z-70 bottom-0'
                     initial={{ x: "-100%" }}
@@ -72,10 +51,10 @@ const MobileParallaxBackground = ({ onRingsFadeStart = () => {} }) => {
                         alt="pisa"
                         className='absolute bottom-[-10vh] h-[55vh] left-[-5vw] scale-x-[-1] z-70 object-contain'
                     />
-                </motion.div>
+                </motion.div> */}
 
                 {/* Torri Gate - Mobile Optimized */}
-                <motion.div
+                {/* <motion.div
                     style={{ x: gate }}
                     initial={{ x: "100%" }}
                     animate={{ x: 0 }}
@@ -87,7 +66,7 @@ const MobileParallaxBackground = ({ onRingsFadeStart = () => {} }) => {
                         alt="Torri Gate"
                         className='absolute -bottom-[45vh] left-50 h-[50vh] z-80 object-contain'
                     />
-                </motion.div>
+                </motion.div> */}
 
                 {/* Great Wall - Mobile Optimized */}
                 <motion.div
@@ -100,7 +79,7 @@ const MobileParallaxBackground = ({ onRingsFadeStart = () => {} }) => {
                     <motion.img
                         src="/MobileOlympicsImages/greatwall-final.png"
                         alt="great wall"
-                        className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[60vh] sm:h-[50vh] z-0 object-cover"
+                        className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[85vh] sm:h-[50vh] z-0 object-cover"
                     />
 
                 </motion.div>
@@ -108,15 +87,15 @@ const MobileParallaxBackground = ({ onRingsFadeStart = () => {} }) => {
                 {/* Colosseum - Mobile Optimized */}
                 <motion.div
                     style={{ y: colosseum }}
-                    initial={{ y: 250 }}
+                    initial={{ y: 300 }}
                     animate={{ y: 0 }}
-                    transition={{ duration: 2, delay: 1, ease: "easeInOut" }}
+                    transition={{ duration: 2, delay:0.5, ease: "easeInOut" }}
                     className='absolute w-full h-[70vh] z-80 bottom-0'
                 >
                     <motion.img
                         src="/olympicsImages/Colosseum.png"
                         alt="Colosseum"
-                        className='absolute -bottom-60 mx-auto h-[70vh] z-90 object-contain'
+                        className='absolute -bottom-60 mx-auto h-[80vh] z-80 object-contain'
                     />
                 </motion.div>
             </motion.div>
