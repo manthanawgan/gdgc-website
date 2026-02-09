@@ -51,7 +51,7 @@ const ScrollLinkedSection = () => {
       image: "/Panel_member5.jpeg",
       github: "https://github.com/devanshi2208",
       linkedin: " https://www.linkedin.com/in/devanshi-sharma-183461324",
-      vision: "Started as an Event Team Member and now serve as Non-Tech Co-Lead, driven by ambition, consistency, dedication, and meaningful contributions toward personal and collective growth."
+      vision: "Started as an Event Team Member and now serve as Non-Tech Co-Lead, driven by ambition, consistency, and meaningful contributions toward personal and collective growth."
     }
   ];
 
@@ -127,7 +127,6 @@ const ScrollLinkedSection = () => {
         <img src={wheel} alt="wheel" className="wheel right-wheel" />
       </div>
       <div className="panels-row">
-        <div className="left-panel">
         <div className="vision-card">
           <h2 className="vision-title">Our Vision</h2>
           <div className="vision-content">
@@ -147,9 +146,7 @@ const ScrollLinkedSection = () => {
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="right-panel">
         <div className="profiles-container" ref={containerRef}>
           <div className="scroll-spacer-top"></div>
           {teamData.map((member, index) => (
@@ -196,7 +193,6 @@ const ScrollLinkedSection = () => {
           <div className="scroll-spacer-bottom"></div>
         </div>
       </div>
-    </div>
     </div>
   );
 };
