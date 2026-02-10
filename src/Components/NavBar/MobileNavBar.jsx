@@ -146,7 +146,14 @@ function MobileNavBar() {
                             alt="GDG Logo"
                             className="h-8 w-auto"
                         />
-                        <div className="text-base font-bold">GDG VIT</div>
+                        <div className="flex flex-col">
+                            <div className="text-sm font-medium">
+                                GDG On Campus
+                            </div>
+                            <div className="text-xs font-medium ml-2 self-center">
+                                VIT Bhopal
+                            </div>
+                        </div>
                     </Link>
 
                     <CollapsibleTrigger asChild>

@@ -75,7 +75,7 @@ function DomainTeam({ team, domainColor }) {
                                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                                     {lead.bio}
                                 </p>
-                                <div className="flex gap-3.justify-center md:justify-start">
+                                <div className="flex gap-3 justify-center md:justify-start">
                                     {lead.linkedin && (
                                         <a
                                             href={lead.linkedin}

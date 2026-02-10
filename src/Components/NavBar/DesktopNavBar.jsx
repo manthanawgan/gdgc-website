@@ -117,7 +117,7 @@ function DesktopNavBar() {
     };
 
     return (
-        <nav className="hidden lg:flex items-center justify-between w-full h-12 px-8 py-4 bg-transparent">
+        <nav className="hidden lg:flex items-center justify-between w-full h-12 px-8 py-7 bg-transparent">
             {/* Logo */}
             <Link
                 to="/"
@@ -130,7 +130,12 @@ function DesktopNavBar() {
                     className="h-10 w-auto"
                 />
 
-                <div className="text-base font-medium ml-2">GDG VIT</div>
+                <div className="flex flex-col">
+                    <div className="text-sm font-medium ml-2">
+                        GDG On Campus
+                    </div>
+                    <div className="text-xs font-medium ml-2 self-center">VIT Bhopal</div>
+                </div>
             </Link>
 
             {/* Navigation Menu */}

@@ -231,7 +231,7 @@ export default function DesktopFooter() {
 
                 <div className="mt-10 border-t border-white/15 pt-6 flex items-center justify-between">
                     <div className="text-xs text-white/60">
-                        © {year} GDG VIT Bhopal. All rights reserved.
+                        © {year} GDG ON CAMPUS VIT Bhopal. All rights reserved.
                     </div>
                     <div className="text-xs text-white/60">
                         Built with ❤️ By GDG Web Development Team VIT Bhopal.

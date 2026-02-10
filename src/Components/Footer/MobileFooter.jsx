@@ -259,10 +259,10 @@ export default function MobileFooter() {
                 {/* Bottom */}
                 <div className="mt-8 border-t border-white/15 pt-5 space-y-2">
                     <div className="text-xs text-white/60">
-                        © {year} GDG VIT Bhopal. All rights reserved.
+                        © {year} GDG ON CAMPUS VIT Bhopal. All rights reserved.
                     </div>
                     <div className="text-xs text-white/60">
-                        Built with ❤️ By GDG Web Developtem Team VIT Bhopal.
+                        Built with ❤️ By GDG Web Development Team VIT Bhopal.
                     </div>
                 </div>
             </div>

@@ -7,19 +7,22 @@ import gdgBadge from "@/assets/EventsSectionAssets/gdgBadge.svg";
 
 const events = [
     {
-        title: "Cloud Community Day",
-        date: "14 Jun 2025",
+        title: "Tech Winter Break 2024",
+        date: "14 December 2024",
         accent: "bg-yellow-400",
-    },
-    {
-        title: "DevFest 2025",
-        date: "12 Oct 2025",
-        accent: "bg-blue-500",
+        img: "@/assets/EventsSectionAssets/event1.jpeg",
     },
     {
         title: "Build With AI",
-        date: "13 Feb 2025",
+        date: "6 April 2025",
+        accent: "bg-blue-500",
+        img: "@/assets/EventsSectionAssets/event2.jpeg",
+    },
+    {
+        title: "Speaker Session",
+        date: "28 December 2025",
         accent: "bg-red-500",
+        img: "@/assets/EventsSectionAssets/event3.jpeg",
     },
 ];
 
@@ -66,7 +69,11 @@ function EventsMobile() {
                             />
                             <div className="relative px-4 pb-4 pt-4">
                                 <div className="flex h-32 items-center justify-center rounded-xl border-2 border-black bg-slate-100 text-xs font-semibold text-slate-600">
-                                    Event Poster Placeholder
+                                    <img
+                                        src={event.img}
+                                        alt={event.title}
+                                        className="h-full w-full object-cover rounded-xl"
+                                    />
                                 </div>
                                 <div className="mt-3 space-y-1">
                                     <h3 className="text-base font-bold text-black">

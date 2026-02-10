@@ -4,22 +4,28 @@ import leftBracket from "@/assets/EventsSectionAssets/leftBracket.svg";
 import rightBracket from "@/assets/EventsSectionAssets/rightBracket.svg";
 import wheel from "@/assets/EventsSectionAssets/wheel.svg";
 import gdgBadge from "@/assets/EventsSectionAssets/gdgBadge.svg";
+import event1 from "@/assets/EventsSectionAssets/event1.jpeg";
+import event2 from "@/assets/EventsSectionAssets/event2.jpeg";
+import event3 from "@/assets/EventsSectionAssets/event3.jpeg";
 
 const events = [
     {
-        title: "Cloud Community Day",
-        date: "14 Jun 2025",
+        title: "Tech Winter Break 2024",
+        date: "14 December 2024",
         accent: "bg-yellow-400",
-    },
-    {
-        title: "DevFest 2025",
-        date: "12 Oct 2025",
-        accent: "bg-blue-500",
+        img: event1,
     },
     {
         title: "Build With AI",
-        date: "13 Feb 2025",
+        date: "6 April 2025",
+        accent: "bg-blue-500",
+        img: event2,
+    },
+    {
+        title: "Speaker Session",
+        date: "28 December 2025",
         accent: "bg-red-500",
+        img: event3,
     },
 ];
 
@@ -66,7 +72,11 @@ function EventsDesktop() {
                             />
                             <div className="relative px-5 pb-5 pt-4">
                                 <div className="flex h-40 items-center justify-center rounded-xl border-2 border-black bg-slate-100 text-sm font-semibold text-slate-600">
-                                    Event Poster Placeholder
+                                    <img
+                                        src={event.img}
+                                        alt={event.title}
+                                        className="h-full w-full object-cover rounded-xl"
+                                    />
                                 </div>
                                 <div className="mt-4 space-y-1">
                                     <h3 className="text-lg font-bold text-black">
