@@ -99,11 +99,13 @@ function DomainTeam({ team, domainColor }) {
           <h3 className="text-sm font-semibold uppercase mb-3 text-gray-500">
             Domain Lead
           </h3>
-          <PersonCard
-            person={lead}
-            roleLabel="Domain Lead"
-            domainColor={domainColor}
-          />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <PersonCard
+              person={lead}
+              roleLabel="Domain Lead"
+              domainColor={domainColor}
+            />
+          </div>
         </>
       )}
 
